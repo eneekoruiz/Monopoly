@@ -3,5 +3,5 @@ projectKey=eneekoruiz_lab2-2
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.68202
 dashboardUrl=https://sonarcloud.io/dashboard?id=eneekoruiz_lab2-2
-ceTaskId=AZmpmFDsE37_wWGwjJvU
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZmpmFDsE37_wWGwjJvU
+ceTaskId=AZmpmq2zH0QcgUR1tW3D
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZmpmq2zH0QcgUR1tW3D
