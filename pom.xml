@@ -45,13 +45,14 @@
 	</repositories>
 
 	<properties>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
-
-		<sonar.organization>eneekoruiz</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.projectKey>eneekoruiz_lab2-2</sonar.projectKey>
-		<sonar.login>0cee658e2b5692197b8cf871e38bb2a44479e486</sonar.login>
+	    <maven.compiler.target>1.8</maven.compiler.target>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	
+	    <!-- Datos reales de tu proyecto en SonarCloud -->
+	    <sonar.organization>eneekoruiz</sonar.organization>
+	    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	    <sonar.projectKey>eneekoruiz_lab2-2</sonar.projectKey>
+	    <sonar.login>85799345cb054b58db89566686e2beb202aa5b3f</sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->

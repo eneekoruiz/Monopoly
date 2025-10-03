@@ -1,0 +1,7 @@
+organization=eneekoruiz
+projectKey=eneekoruiz_lab2-2
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.68212
+dashboardUrl=https://sonarcloud.io/dashboard?id=eneekoruiz_lab2-2
+ceTaskId=AZmpux_IrjMu61YdWpPC
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZmpux_IrjMu61YdWpPC
