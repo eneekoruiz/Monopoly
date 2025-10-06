@@ -1,0 +1,79 @@
+
+name: SonarCloud Analysis
+
+
+
+on:
+
+  push:
+
+    branches: [ master ]
+
+  pull_request:
+
+    branches: [ master ]
+
+
+
+jobs:
+
+  build:
+
+    name: Build and Analyze
+
+    runs-on: ubuntu-latest
+
+    
+
+    steps:
+
+    - name: Checkout code
+
+      uses: actions/checkout@v4
+
+      with:
+
+        fetch-depth: 0
+
+        
+
+    - name: Set up JDK 17
+
+      uses: actions/setup-java@v4
+
+      with:
+
+        java-version: '17'
+
+        distribution: 'temurin'
+
+        
+
+    - name: Cache Maven dependencies
+
+      uses: actions/cache@v3
+
+      with:
+
+        path: ~/.m2
+
+        key: maven-${{ hashFiles('**/pom.xml') }}
+
+        restore-keys: maven-
+
+        
+
+    - name: Build and run tests with coverage
+
+      run: mvn -B clean test jacoco:report
+
+      
+
+    - name: SonarCloud Scan
+
+      env:
+
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      run: mvn -B sonar:sonar
+
