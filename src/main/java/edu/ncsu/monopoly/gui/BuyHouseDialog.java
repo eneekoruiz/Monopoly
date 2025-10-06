@@ -18,7 +18,7 @@ public class BuyHouseDialog extends JDialog {
 	private JComboBox cboMonopoly; 
 	private JComboBox cboNumber;
 
-	private Player player;
+	private transient Player player;
 
 	public BuyHouseDialog(Player player) {
 		this.player = player;
